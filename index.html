@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9ade74d794.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="to-do-list">
+        <h1 class="title">todo app</h1>
+        <form id="form">
+            <div class="add-task">
+                <input type="text" class="ipt" placeholder="Add your new todo" id="task-name">
+                <!--icon add-->
+                <button class="btn" id="add-task">
+                    <i class="fa-solid fa-plus icon"></i>
+                </button>
+            </div>
+        </form>
+        <ul class="task-list"></ul>
+        <div class="current-tasks hide">
+            <p>you have <span id="number-task"></span> pending task(s)</p>
+            <button class="btn" id="clear-all">clear all</button>
+        </div>
+    </div>
+    <template id="task-template">
+        <div class="task">
+            <li class="task-design">
+                <span></span>
+                <button class="btn btn-design" id="delete-task">
+                    <i class="fa-solid fa-trash icon delete-icon"></i>
+                </button>
+            </li>
+        </div>
+    </template>
+</body>
+</html>

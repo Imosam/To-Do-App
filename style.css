@@ -1,0 +1,86 @@
+/* general design */
+*{
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    background:linear-gradient(210deg,hsl(200, 52%, 36%),hsl(184, 47%, 47%));
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+/* todo box design*/
+.to-do-list {
+    background-color: white;
+    padding: 2rem;
+    min-width: 300px;
+    border-radius: 0.3em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+}
+
+.title{
+    text-transform: capitalize;
+}
+.task-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0,0%,90%);
+    border-radius: 0.3em;
+    margin-bottom: .5rem;
+}
+.task-design > span {
+    padding: 0.5rem;
+}
+.current-tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* button and input design */
+.ipt,.btn {
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    height: 2rem;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: hsl(290,50%,50%);
+    margin-left: 0.5rem;
+    transition: all 500ms;
+}
+.ipt {
+    border: 2px solid hsl(0,0%,85%);
+}
+#delete-task {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: auto;
+}
+#delete-task:hover{
+    background-color: rgb(255, 64, 31);
+}
+#add-task:hover{
+    background-color: hsl(140,50%,50%);
+}
+#clear-all:hover{
+    background-color: hsl(290,70%,50%);
+}
+/*custom classes*/
+.btn-design {
+    background-color: tomato;
+}
+.hide{
+    display: none;
+}
